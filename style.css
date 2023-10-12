@@ -1,4 +1,4 @@
-
+/* Changed the box model to it's alternate using box-sizing */
 * {
     box-sizing: border-box;
 }
@@ -143,11 +143,11 @@ header nav ul {
 
 .work-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); */
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
+/* I Used nth-child pseudo-classes to do some stuff */
 
 .a-2:nth-child(1) {
     grid-column: span 1;
@@ -172,6 +172,7 @@ img {
     cursor: pointer;
 }
 
+    /* Cool Hover Trick I Invented */
 img:hover {
     background-image: linear-gradient(45deg, orangered, blue);
     box-shadow: 3px 3px 20px;
@@ -214,10 +215,6 @@ img:hover {
     background-color: white;
     color: #3882F6;
     cursor: pointer;
-}
-
-#resume {
-    
 }
 
 
